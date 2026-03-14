@@ -1,0 +1,4 @@
+node_modules/
+todos.db
+*.db-shm
+*.db-wal
