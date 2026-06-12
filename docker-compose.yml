@@ -1,0 +1,14 @@
+services:
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+    labels:
+      playgrounds.github_url: "https://github.com/viktorvsk/hellophoenix"
+      playgrounds.expose: "external:3000"
+      playgrounds.dockerfile: "Dockerfile"
+      playgrounds.branch: main
+      playgrounds.source_mount: /app
+      playgrounds.subdomain: hellophoenix
